@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 android:layout_width="match_parent"
+			 android:layout_height="wrap_content"
+			 android:layout_marginTop="50dp"
+			 android:stretchColumns="1">
+	<TableRow android:layout_height="wrap_content">
+		<TextView
+				android:text="Bids"
+				android:padding="3dip"
+				android:id="@+id/bids"
+				android:textColor="@android:color/holo_green_dark"
+				android:layout_marginLeft="50dp"
+				android:layout_height="wrap_content"
+		/>
+		<TextView
+				android:text="asks"
+				android:gravity="right"
+				android:padding="3dip"
+				android:layout_marginRight="50dp"
+				android:textColor="@android:color/holo_red_dark"
+				android:id="@+id/asks"
+				android:layout_height="wrap_content"
+		/>
+	</TableRow>
+</TableLayout>

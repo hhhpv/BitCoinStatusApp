@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/black">
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Message"
+	android:text="Please Enter a price to set an alert when the price drops" android:textColor="@android:color/holo_green_dark"
+			  android:layout_centerHorizontal="true" android:layout_marginTop="50dp" android:fontFamily="serif-monospace"
+			  android:layout_marginLeft="50dp" android:textSize="10dp"
+	/>
+	<EditText android:layout_width="200dp" android:layout_height="wrap_content" android:layout_below="@id/Message"
+		android:id="@+id/price_field" android:layout_marginTop="75dp" android:backgroundTint="@color/colorAccent"
+			  android:textColor="@android:color/holo_green_dark" android:gravity="center" android:layout_centerHorizontal="true"
+			  android:tag="USD" android:inputType="numberDecimal" />
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/currency"
+			  android:layout_toRightOf="@+id/price_field" android:layout_marginTop="150dp"
+			  android:text="USD" android:textColor="@android:color/holo_green_dark"/>
+	<Button android:layout_width="wrap_content" android:layout_height="40dp"
+	android:id="@+id/save" android:layout_below="@+id/price_field" android:gravity="center" android:layout_marginTop="50dp"
+	android:layout_centerHorizontal="true" android:text="SET ALERT " android:backgroundTint="@color/colorPrimaryDark"
+	/>
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/info"
+	android:layout_below="@+id/save" android:layout_centerHorizontal="true" android:textColor="@color/colorPrimaryDark"
+	android:fontFamily="serif-monospace" android:textSize="20dp" android:text="The Data in the App is Reflective of the rates on BitStamp.
+	Please Visit BitStamp for Further Information." android:textAlignment="center" android:layout_alignParentBottom="true" android:gravity="bottom"
+	/>
+	
+</RelativeLayout>
