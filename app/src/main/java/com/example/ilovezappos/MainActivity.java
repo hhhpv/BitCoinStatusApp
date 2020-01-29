@@ -33,6 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.github.mikephil.charting.charts.Chart.LOG_TAG;
+import static java.util.concurrent.TimeUnit.MINUTES;
 
 
 public class MainActivity extends AppCompatActivity implements OnChartGestureListener, OnChartValueSelectedListener, SwipeRefreshLayout.OnRefreshListener {
@@ -306,7 +307,7 @@ public class MainActivity extends AppCompatActivity implements OnChartGestureLis
                 .setLifetime(Lifetime.FOREVER)
                 .setRecurring(true)
                 .setTag(Job_Tag)
-                .setTrigger(Trigger.executionWindow(10,15))
+                .setTrigger(Trigger.executionWindow((int)MINUTES.toSeconds(50), (int)MINUTES.toSeconds(60)))
                 .setRetryStrategy(RetryStrategy.DEFAULT_EXPONENTIAL)
                 .setReplaceCurrent(true)
                 .setConstraints(Constraint.ON_ANY_NETWORK)
